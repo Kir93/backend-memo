@@ -1,8 +1,8 @@
 ## 자주 사용하는 REST API
 
-### 1. 기본 API
+### 1. [기본 API](https://strapi.io/documentation/v3.x/content-api/api-endpoints.html#endpoints)
 
-#### 1.1 DB 생성 시 기본적으로 생기는 API(ex. Post)
+#### DB 생성 시 기본적으로 생기는 API(ex. Post)
 
 ##### - GET backpath/posts
 
@@ -28,9 +28,9 @@ Delete : Post 테이블에서 id가 Param과 동일한 데이터 제거
 
 Put : Post 테이블에서 id가 Param과 동일한 데이터 수정
 
-#### 1.2 Create API(ex. Post)
+### 2. [Create API(ex. Post)](https://strapi.io/documentation/v3.x/concepts/routing.html#concept)
 
-##### 1.2.1 api/post/config/routes.js 파일에서 원하는 API 만들기
+##### 2.1 api/post/config/routes.js 파일에서 원하는 API 만들기
 
 ex. GET backpath/posts/geo?lat=123&lng=321
 
@@ -46,7 +46,7 @@ ex. GET backpath/posts/geo?lat=123&lng=321
   },
 ```
 
-##### 1.2.2 api/post/controllers/post.js에 추가한 handler의 이름과 동일한 API 만들기
+##### 2.2 api/post/controllers/post.js에 추가한 handler의 이름과 동일한 API 만들기
 
 ```
 module.exports = {
@@ -57,7 +57,7 @@ module.exports = {
 };
 ```
 
-##### 1.2.3 api/post/services/post.js에 추가한 handler의 이름과 동일한 함수 만들기
+##### 2.3 api/post/services/post.js에 추가한 handler의 이름과 동일한 함수 만들기
 
 ```
 module.exports = {
@@ -82,7 +82,7 @@ module.exports = {
 };
 ```
 
-##### 1.2.4 그럼 DB에서 custom 내용을 불러올 수 있다.
+##### 2.4 그럼 DB에서 custom 내용을 불러올 수 있다.
 
 ```
 [
