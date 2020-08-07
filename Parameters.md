@@ -29,3 +29,9 @@
 - DESC: GET /users?_sort=email:DESC
 - GET /users?_limit=30
 - GET /users?_start=10&_limit=10
+
+### 4. And / Or
+
+- GET /posts?_where[0][stars]=1&_where[1][pricing_lte]=20 : AND
+- GET /posts?_where[_or][0][stars]=1&_where[_or][1][pricing_gt]=30 : OR
+
