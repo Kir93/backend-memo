@@ -10,3 +10,6 @@ Strapi Auth Provider 생성하기(ex. kakao login)
 자주 사용하는 API
 
 ## 3. [Parameters](https://github.com/Kir93/StrapiMemo/blob/master/Parameters.md)
+
+자주 사용하는 Parameters 정리
+
