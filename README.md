@@ -1,7 +1,8 @@
-## StrapiMemo
+# StrapiMemo
+
 Strapi Memo
 
-### [New Auth Provider](https://strapi.io/documentation/v3.x/plugins/users-permissions.html#user-object-in-strapi-context)
+### 1. [New Auth Provider](https://strapi.io/documentation/v3.x/plugins/users-permissions.html#user-object-in-strapi-context)
 
 - WEB 소셜 로그인 접속 주소
 
@@ -15,16 +16,16 @@ http://localhost:1337/connect/Any Provider Name
 http://localhost:1337/auth/Any Provider Name/callback?access_token=${access_token}
 ```
 
-1. **node_modules에서 파일 복사**
+1.1 **node_modules에서 파일 복사**
 ```
 extensions/users-permissions/services/Providers.js
 extensions/users-permissions/config/functions/bootstrap.js
 extensions/users-permissions/admin/src/components/PopUpForm/index.js
 extensions/users-permissions/admin/src/translations/en.json
 ```
-2. **Provider.js 수정(예시 카카오)**
+1.2 **Provider.js 수정(예시 카카오)**
 
-2.1 Purest 설정 : kakao로그인 시도 시 토큰 불러오기, 토큰 기반 정보 불러오기 설정
+2.2.1 Purest 설정 : kakao로그인 시도 시 토큰 불러오기, 토큰 기반 정보 불러오기 설정
 
 ```
 case "kakao": {
@@ -57,7 +58,7 @@ case "kakao": {
       });
 ```
 
-2.2 Purest 설정기반으로 유저정보 불러오고 Callback(회원 아닐 경우 회원가입까지)
+1.2.2 Purest 설정기반으로 유저정보 불러오고 Callback(회원 아닐 경우 회원가입까지)
 
 ```
 kakao
@@ -78,7 +79,7 @@ kakao
   }
 ```
 
-3. **bootstrap.js 파일 수정하기(Strapi Provider 탭 보이게 추가 됨)**
+1.3 **bootstrap.js 파일 수정하기(Strapi Provider 탭 보이게 추가 됨)**
 
 Icon의 경우 수정 방법 알게 되면 수정해야 함(문의 중)
 
@@ -92,7 +93,7 @@ kakao: {
     },
 ```
 
-4. **/admin/src/components/PopUpForm/index.js 파일 수정**
+1.4 **/admin/src/components/PopUpForm/index.js 파일 수정**
 
 Kakao Developers에서 설정한 Callback 주소를 입력한다.
 
@@ -101,7 +102,7 @@ case "kakao":
         return `${strapi.backendURL}/connect/kakao/callback`;
 ```
 
-5. **/admin/src/translations/en.json, ko.json 수정**
+1.5 **/admin/src/translations/en.json, ko.json 수정**
 
 ko.json의 경우 만약 한국어를 이용하지 않는 경우 수정하지 않아도 무관하다
 
