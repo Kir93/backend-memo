@@ -4,8 +4,8 @@
   </a>
 </p>
 
-# StrapiMemo
-Strapi Memo
+# BackendMemo
+Backend Memo
 
 ## 1. [New Provider](https://github.com/Kir93/StrapiMemo/blob/master/NewProvider.md)
 
