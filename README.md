@@ -1,22 +1,23 @@
-<p align="center">
-  <a href="https://strapi.io">
-    <img src="https://strapi.io/assets/strapi-logo-dark.svg" width="318px" alt="Strapi logo" />
-  </a>
-</p>
+# BackendMemo
+Backend Memo
 
+<<<<<<< HEAD
 # StrapiMemo
 
 Strapi Memo
 
 ## 1. [New Provider](https://github.com/Kir93/StrapiMemo/blob/master/NewProvider.md)
+=======
+## [1. New Provider](https://github.com/Kir93/BackendMemo/blob/master/Memos/NewProvider.md)
+>>>>>>> b6eb2f5f7b753a23dbca16876e937aeb698a6bf1
 
 Strapi Auth Provider 생성하기(ex. kakao login)
 
-## 2. [RESTAPI](https://github.com/Kir93/StrapiMemo/blob/master/RESTAPI.md)
+## [2. RESTAPI](https://github.com/Kir93/BackendMemo/blob/master/Memos/RESTAPI.md)
 
 자주 사용하는 API
 
-## 3. [Parameters](https://github.com/Kir93/StrapiMemo/blob/master/Parameters.md)
+## [3. Parameters](https://github.com/Kir93/BackendMemo/blob/master/Memos/Parameters.md)
 
 자주 사용하는 Parameters 정리
 
