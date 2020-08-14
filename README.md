@@ -1,15 +1,7 @@
 # BackendMemo
 Backend Memo
 
-<<<<<<< HEAD
-# StrapiMemo
-
-Strapi Memo
-
-## 1. [New Provider](https://github.com/Kir93/StrapiMemo/blob/master/NewProvider.md)
-=======
 ## [1. New Provider](https://github.com/Kir93/BackendMemo/blob/master/Memos/NewProvider.md)
->>>>>>> b6eb2f5f7b753a23dbca16876e937aeb698a6bf1
 
 Strapi Auth Provider 생성하기(ex. kakao login)
 
