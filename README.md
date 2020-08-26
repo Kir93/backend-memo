@@ -17,3 +17,7 @@ Strapi Auth Provider 생성하기(ex. kakao login)
 ## [4. S3Provider](https://github.com/Kir93/BackendMemo/blob/master/Memos/S3Provider.md)
 
 Upload를 S3로 변경하는 방법 정리
+
+## [5. Deploy](https://github.com/Kir93/BackendMemo/blob/master/Memos/Deploy.md)
+
+AWS를 통한 배포 방법 정리
