@@ -1,39 +1,38 @@
-## 자주 사용하는 REST API
+# 자주 사용하는 REST API
 
-### 1. [기본 API](https://strapi.io/documentation/v3.x/content-api/api-endpoints.html#endpoints)
+# [1.기본 API](https://strapi.io/documentation/v3.x/content-api/api-endpoints.html#endpoints)
 
-#### DB 생성 시 기본적으로 생기는 API(ex. Post)
+DB 생성 시 기본적으로 생기는 API(ex. Post)
 
-##### - GET backpath/posts
+## - GET backpath/posts
 
 Find : Post 테이블의 모든 데이터 불러오기
 
-##### - GET backpath/posts/:id
+## - GET backpath/posts/:id
 
 FindOne : Post 테이블에서 id가 Param과 동일한 데이터 불러오기
 
-##### - GET backpath/posts/count
+## - GET backpath/posts/count
 
 Count : Post 테이블의 모든 데이터의 갯수 불러오기
 
-##### - POST backpath/posts
+## - POST backpath/posts
 
 Create : Post 테이블에 새 데이터 생성
 
-##### - DELETE backpath/posts/:id
+## - DELETE backpath/posts/:id
 
 Delete : Post 테이블에서 id가 Param과 동일한 데이터 제거
 
-##### - PUT backpath/posts/:id
+## - PUT backpath/posts/:id
 
 Put : Post 테이블에서 id가 Param과 동일한 데이터 수정
 
-### 2. [Create API(ex. Post)](https://strapi.io/documentation/v3.x/concepts/routing.html#concept)
+# 2. [Create API(ex. Post)](https://strapi.io/documentation/v3.x/concepts/routing.html#concept)
 
-##### 2.1 api/post/config/routes.js 파일에서 원하는 API 만들기
+## 2.1 api/post/config/routes.js 파일에서 원하는 API 만들기
 
 ex. GET backpath/posts/geo?lat=123&lng=321
-
 
 ```
 {
@@ -46,7 +45,7 @@ ex. GET backpath/posts/geo?lat=123&lng=321
   },
 ```
 
-##### 2.2 api/post/controllers/post.js에 추가한 handler의 이름과 동일한 API 만들기
+## 2.2 api/post/controllers/post.js에 추가한 handler의 이름과 동일한 API 만들기
 
 ```
 module.exports = {
@@ -57,7 +56,7 @@ module.exports = {
 };
 ```
 
-##### 2.3 api/post/services/post.js에 추가한 handler의 이름과 동일한 함수 만들기
+## 2.3 api/post/services/post.js에 추가한 handler의 이름과 동일한 함수 만들기
 
 ```
 module.exports = {
@@ -82,7 +81,7 @@ module.exports = {
 };
 ```
 
-##### 2.4 그럼 DB에서 custom 내용을 불러올 수 있다.
+## 2.4 그럼 DB에서 custom 내용을 불러올 수 있다.
 
 ```
 [
